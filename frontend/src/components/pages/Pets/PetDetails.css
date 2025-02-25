@@ -1,0 +1,113 @@
+.pet-details-container {
+    text-align: center;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pet-details-container p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.pet-details-header {
+    margin-bottom: 2em;
+}
+
+.pet-details-header h1 {
+    font-size: 2.5em;
+    color: #16479d;
+    margin-bottom: 0.5em;
+}
+
+.pet-details-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.pet-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.pet-images img {
+    max-width: 100%; 
+    max-height: 250px; 
+    width: auto; 
+    height: auto; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; 
+}
+
+.pet-images img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pet-details-container .bold {
+    font-weight: bold;
+    color: #16479d;
+}
+
+.pet-details-container button {
+    background-color: #25b456;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.8em 1.5em;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+.pet-details-container button:hover {
+    background-color: #1c8a42;
+}
+
+.pet-details-container a {
+    color: #16479d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pet-details-container a:hover {
+    color: #113366;
+}
+
+
+@media (max-width: 768px) {
+    .pet-details-header h1 {
+        font-size: 2em;
+    }
+
+    .pet-details-header p {
+        font-size: 1em;
+    }
+
+    .pet-images img {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pet-details-header h1 {
+        font-size: 1.8em;
+    }
+
+    .pet-details-container p {
+        font-size: 1em;
+    }
+
+    .pet-images img {
+        max-height: 150px;
+    }
+}

@@ -1,0 +1,81 @@
+.form-container{
+    max-width: 300px;
+    margin: 2em auto;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+
+
+.form-container input[type="submit"] {
+    border-radius: 8px;
+    background-color: #25b456;
+    color: #fff;
+    border: none;
+    min-width: 100px;
+    min-height: 2.5em;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.form-container input[type="submit"]:hover{
+    background-color: #1c8a42;
+}
+
+.form-container p {
+    margin-top: 0.8em;
+}
+
+.form-container p a {
+    color: #16478d;
+    font-weight: bold;
+}
+
+/* form pets */
+
+.preview-pet-images{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.preview-pet-images img {
+    width: 100px;
+    height: 100px;
+    margin-left: 1em;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%; 
+        padding: 1em;
+    }
+
+    .form-container input[type="submit"] {
+        font-size: 1em; 
+    }
+
+    .preview-pet-images img {
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 100%; 
+        padding: 0.8em;
+    }
+
+    .form-container input[type="submit"] {
+        font-size: 0.9em; 
+    }
+
+    .preview-pet-images img {
+        width: 60px; 
+        height: 60px;
+    }
+}
