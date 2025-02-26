@@ -52,7 +52,7 @@ Para o backend, utilizei **Nodejs**.
 
 ## Collections
 
-Existem duas collections: ``Users`` e ``Pets``
+Existem duas collections: ``Users`` e ``Pets``:
 
 ### Users
 
@@ -94,7 +94,7 @@ Existem duas collections: ``Users`` e ``Pets``
 A autenticação é feita através de um **token JWT**, que é gerado após o usuário fazer login. O token é armazenado no **localStorage** do navegador e deve ser enviado no cabeçalho (`Authorization`) de todas as requisições protegidas pelo middleware de autenticação.
 
 ## Validadores de input
-Para validar os inputs recebidos pela API, utilizei o **express-validator** e criei funções de validação para verificar campos como email, número de telefone, imagens e imagens.
+Para validar os inputs recebidos pela API, utilizei o **express-validator** e criei funções de validação para verificar campos como email, número de telefone e imagens.
 
 # Frontend
 
