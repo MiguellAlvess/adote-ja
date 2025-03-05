@@ -1,6 +1,7 @@
 # Sobre
 
-Esta aplicação web foi desenvolvida para facilitar a adoção de cachorros, conectando pessoas que desejam adotar um pet com aquelas que têm animais disponíveis para adoção. Os usuários podem cadastrar seus pets, fornecendo informações como nome, idade, peso, cor e fotos. Outros usuários interessados podem visualizar os pets cadastrados, solicitar uma visita para conhecê-los melhor e, se houver uma conexão, concluir o processo de adoção.
+Aplicação web desenvolvida para facilitar a adoção de cachorros, conectando pessoas que desejam adotar um pet com aquelas que têm animais disponíveis para adoção. Os usuários podem cadastrar seus pets, fornecendo informações como nome, idade, peso, cor e fotos. Outros usuários interessados podem visualizar os pets cadastrados, solicitar uma visita para conhecê-los melhor e, se houver uma conexão, concluir o processo de adoção.
+
 
 # Tecnologias
 
@@ -10,6 +11,8 @@ Esta aplicação web foi desenvolvida para facilitar a adoção de cachorros, co
 - **MongoDB**
 - **JWT (JSON Web Tokens)** 
 - **Express-validator**
+- **Multer**
+- **Mongoose**
 
 
 ## Frontend
@@ -26,9 +29,6 @@ Esta aplicação web foi desenvolvida para facilitar a adoção de cachorros, co
 # Entre na pasta backend
 cd backend
 
-# Crie o arquivo contendo as variáveis de ambiente
-cp .env.example .env
-
 # Instale as dependências
 npm install
 
@@ -41,9 +41,6 @@ npm start
 ```bash
 # Entre na pasta frontend
 cd frontend
-
-# Crie o arquivo contendo as variáveis de ambiente
-cp .env.example .env
 
 # Instale as dependências
 npm install
@@ -58,7 +55,7 @@ Para o backend, utilizei **Nodejs**.
 
 ## Collections
 
-Existem duas collections: ``Users`` e ``Pets``
+Existem duas collections: ``Users`` e ``Pets``:
 
 ### Users
 
@@ -100,7 +97,9 @@ Existem duas collections: ``Users`` e ``Pets``
 A autenticação é feita através de um **token JWT**, que é gerado após o usuário fazer login. O token é armazenado no **localStorage** do navegador e deve ser enviado no cabeçalho (`Authorization`) de todas as requisições protegidas pelo middleware de autenticação.
 
 ## Validadores de input
-Para validar os inputs recebidos pela API, utilizei o **express-validator** e criei funções de validação para verificar campos como email, número de telefone, imagens e imagens.
+
+Para validar os inputs recebidos pela API, utilizei o **express-validator** e criei funções de validação para verificar campos como email, número de telefone e imagens.
+
 
 # Frontend
 
@@ -109,5 +108,18 @@ Para o frontend, utilizei **React** como biblioteca principal. A estilização f
 
 ## Telas
 
+![Image](https://github.com/user-attachments/assets/e463a7dc-ddc5-4513-88df-caf62727b8c7)
+
+![Image](https://github.com/user-attachments/assets/910d3fee-2897-4777-98ac-0e732f74f7bd)
+
+![Image](https://github.com/user-attachments/assets/9aa324f0-f50a-4989-8387-291e5a7b23e5)
+
+![Image](https://github.com/user-attachments/assets/468eb1a9-56d0-4fa5-aa22-c895d154651f)
+
+![Image](https://github.com/user-attachments/assets/fd63d8f2-f972-4ebb-8176-8c1688608744)
+
+![Image](https://github.com/user-attachments/assets/05a66c58-7597-47dc-9fd0-01791b1bf70f)
+
+![Image](https://github.com/user-attachments/assets/12217f7e-f82f-488c-b3c8-16e0eeaf9049)
 
 
