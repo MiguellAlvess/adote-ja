@@ -17,7 +17,7 @@ Aplicação web desenvolvida para facilitar a adoção de cachorros, conectando 
 
 ## Frontend
 - **React** 
-- **React Router**
+- **JavaScript**
 - **Axios**
 # Utilização
 
